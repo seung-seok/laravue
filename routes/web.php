@@ -18,5 +18,5 @@ Route::get('/', function () {
 });
 Route::get('item', [App\Http\Controllers\ItemController::class,'index'])->name('item.index');
 Route::get('/test', function () {
-    return view('layouts/Test');
+    return view('layouts/test');
 });

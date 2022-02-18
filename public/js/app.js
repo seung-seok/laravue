@@ -5304,8 +5304,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {
+    'Nav': _Nav_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
   data: function data() {
     return {
       items: {},
@@ -5415,10 +5419,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
- // console.log(Item.methods);
+//
+// import Test from './Test.vue';
 
-console.log(_Item_vue__WEBPACK_IMPORTED_MODULE_0__["default"]);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  // components: {
+  //     'Test' : Test
+  // },
   data: function data() {
     return {
       categories: {
@@ -5487,8 +5494,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
-/* harmony import */ var _Nav_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Nav.vue */ "./resources/js/Nav.vue");
-/* harmony import */ var _Item_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Item.vue */ "./resources/js/Item.vue");
+/* harmony import */ var _Item_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Item.vue */ "./resources/js/Item.vue");
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -5514,19 +5520,17 @@ vue__WEBPACK_IMPORTED_MODULE_0__["default"].component('example-component', (__we
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+// import Nav from './Nav.vue'
+// const nav = new Vue({
+//     el: '#nav',
+//     render: h=>h(Nav)
+// });
 
-
-var nav = new vue__WEBPACK_IMPORTED_MODULE_0__["default"]({
-  el: '#nav',
-  render: function render(h) {
-    return h(_Nav_vue__WEBPACK_IMPORTED_MODULE_1__["default"]);
-  }
-});
 
 var item = new vue__WEBPACK_IMPORTED_MODULE_0__["default"]({
   el: '#main',
   render: function render(h) {
-    return h(_Item_vue__WEBPACK_IMPORTED_MODULE_2__["default"]);
+    return h(_Item_vue__WEBPACK_IMPORTED_MODULE_1__["default"]);
   }
 });
 
@@ -29013,6 +29017,8 @@ var render = function () {
   return _c(
     "main",
     [
+      _c("Nav"),
+      _vm._v(" "),
       _vm.loading ? [_c("p", [_vm._v("loading~")])] : _vm._e(),
       _vm._v(" "),
       _c("div", { on: { click: _vm.changedata } }, [_vm._v("dataReset")]),

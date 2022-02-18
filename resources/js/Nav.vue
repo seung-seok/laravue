@@ -11,15 +11,19 @@
             <div id="nav_list" v-for="sub_category in sub_categories" :key="sub_category">
                 <p>{{ sub_category }}</p>
             </div>
-        </div>
+        </div>    
+        <!-- <Test></Test> -->
     </nav>
 </template>
 
 <script>
+// import Test from './Test.vue';
 import Item from './Item.vue';
-// console.log(Item.methods);
-    console.log(Item);
+    
 export default {
+    // components: {
+    //     'Test' : Test
+    // },
     data() {
         return {
             categories: {

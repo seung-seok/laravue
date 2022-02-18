@@ -28,11 +28,11 @@ import Vue from 'vue';
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-import Nav from './Nav.vue'
-const nav = new Vue({
-    el: '#nav',
-    render: h=>h(Nav)
-});
+// import Nav from './Nav.vue'
+// const nav = new Vue({
+//     el: '#nav',
+//     render: h=>h(Nav)
+// });
 
 import Item from './Item.vue'
 const item = new Vue({

@@ -1,17 +1,11 @@
 <template>
-    <div id="ddddd">
-        <p>{{ message }}</p>
+    <div>
+        <h1>asdfasdfasd</h1>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'zd',
-    props: {
-        message: {
-            tpye: String,
-            default: 'hi!',
-        }
-    }
+  
 }
 </script>

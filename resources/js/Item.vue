@@ -1,5 +1,6 @@
 <template>
     <main>
+        <Nav></Nav>
         <template v-if="loading">
             <p>loading~</p>
         </template>
@@ -23,6 +24,9 @@
 <script>
 import Nav from './Nav.vue';
 export default {
+    components: {
+        'Nav' : Nav
+    },
     data() {
         return {
             items: {},
