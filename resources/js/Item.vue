@@ -1,12 +1,14 @@
 <template>
     <main>
         <Nav @setInput="setInput"></Nav>
-        <!-- loading data -->
-        <template v-if="loading">
-                <h2>loading ..</h2>
-        </template>
-        <div id="item_list" v-if="items">
-            <div :id="'item_'+item.rank" class="item" v-for="item in items" :key="item.itemNo">
+        <div class="spinner" :class="{loading : loading === false}">
+                <img :src='`img/oval.svg`' alt="" width="100">
+        </div>
+        <div id="item_list" v-if="items" :class="{loading : loading === true}">
+            <div :id="'item_'+item.rank" 
+            class="item" 
+            v-for="item in items" 
+            :key="item.itemNo">
                 <div class="item_header">
                     <div class="item_no">{{ item.rank.padStart(2,'0') }}</div>
                     <div :class="'item_rank '+item.rank_class">{{ item.rank_cal }}</div>
@@ -19,6 +21,24 @@
         </div>
     </main>
 </template>
+
+<style>
+main {
+    height: 100%;
+}
+.spinner{
+    width: 100%;
+    height: 100%;
+    background-color: #2a2827;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.loading {
+    display: none !important;
+}
+</style>
 
 <script>
 import Nav from './Nav.vue';

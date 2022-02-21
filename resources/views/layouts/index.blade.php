@@ -14,7 +14,7 @@
         <!-- Swiper JS -->
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <!-- jQuery -->
-        <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <!-- <script  src="http://code.jquery.com/jquery-latest.min.js"></script> -->
     </head>
     <body>
         <!-- <div id="nav"></div> -->
