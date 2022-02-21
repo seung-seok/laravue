@@ -15,11 +15,9 @@
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <!-- jQuery -->
         <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <!-- ajax JS -->
-        <!-- <script src="{{ asset('js/ajax.js')}}"></script> -->
     </head>
     <body>
-        <div id="nav"></div>
+        <!-- <div id="nav"></div> -->
         <div id="main"></div>
         <script src="{{ asset('js/app.js') }}"></script>
     </body>

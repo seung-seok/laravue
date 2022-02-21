@@ -20,7 +20,7 @@ class ItemController extends Controller
             'cat'     => $cats,
             // 'cat'     => '01_00',
             'om'     => 'json',
-            'sz'     => '10'
+            'sz'     => '100'
         );
         $url = $url . "?" . http_build_query($data, '', );
 
